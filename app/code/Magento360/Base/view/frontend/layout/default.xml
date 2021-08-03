@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--<referenceContainer name="footer-container">
+            <block class="Magento360\Base\Block\WebsiteSwitcher" name="website_switcher" after="-"
+                   template="Magento360_Base::website_switcher.phtml">
+            </block>
+        </referenceContainer>-->
+    </body>
+</page>

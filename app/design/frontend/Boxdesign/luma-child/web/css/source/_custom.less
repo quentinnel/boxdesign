@@ -1,0 +1,199 @@
+/* as per https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-guide/css_quick_guide_mode.html */
+/* https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html */
+//
+//  Common (style-m.css)
+//
+& when (@media-common = true) {
+  .custom-slider {
+    .owl-carousel {
+      .banner-item {
+        .content_slider {
+          max-width: 500px;
+          background: rgba(0, 0, 0, 0.6);
+          top: 50%;
+          transform: translateY(-50%);
+          .buttons {
+            .custom_content {
+              text-align: left;
+              margin: 0;
+            }
+          }
+        }
+      }
+      &.owl-theme {
+        .owl-controls {
+          .owl-dot {
+            span {
+              background: #575e65;
+              border: 1px solid #575e65;
+              width: 15px;
+              height: 15px;
+            }
+            &.active {
+              span {
+                background: @theme-color;
+                border: 1px solid @theme-color;
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .owl-theme {
+      .owl-dots {
+        bottom: -25px;
+      }
+    }
+  }
+  .banner-content {
+    padding: 15px;
+    color: #fff;
+    text-shadow: 1px 1px #555555;
+    .banner-title-main {
+      font-size: 24px;
+      margin-bottom: 10px;
+      line-height: 32px;
+    }
+    ul {
+      margin-bottom: 0;
+      padding-left: 15px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .action {
+    &.primary {
+      background-color: @theme-color;
+      border-color: @theme-color;
+      &:hover {
+        background-color: @theme-color-hover;
+        border-color: @theme-color-hover;
+      }
+    }
+  }
+
+  a:active, a:hover {
+    color: @theme-color !important;
+  }
+
+  .orangetext {
+    color: @theme-color;
+  }
+
+  .freeshipping {
+    line-height: 14px;
+    background: #fafafa;
+    /*max-width: 900px;*/
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .middlebanner {
+    background: #eee;
+    img {
+      float: left;
+      padding: 0px;
+      margin: 0px 20px 0px 0px;
+      Xwidth: 100%;
+      Xheight: auto;
+    }
+
+    h4 {
+      text-transform: capitalize;
+      font-weight: 200;
+      font-size: 18px;
+      padding-top: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0px 0px 5px 0px;
+    }
+    .bespokebutton {
+      a {
+        background: @theme-color;
+        display: inline-block;
+        padding: 5px 10px;
+        color: @color-white !important;
+        &:hover{
+          background: @theme-color-hover;
+        }
+      }
+    }
+  }
+
+  h3 {
+    color: #595959;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-transform: none;
+  }
+
+  .product-item {
+    .price-box {
+      margin: 10px 0 10px;
+    }
+  }
+}
+//mobile
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .custom-slider {
+    .owl-carousel {
+      .banner-item {
+        .content_slider {
+          width: 90%;
+          left: 15px;
+        }
+      }
+    }
+    .banner-content {
+      .banner-title-main {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      ul {
+        font-size: 12px;
+      }
+    }
+  }
+  .middlebanner {
+    padding: 10px;
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+  .custom-slider {
+    .owl-carousel {
+      .owl-item {
+        img {
+          min-height: 260px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .middlebanner {
+    margin: 0px 30px;
+    height: 236px;
+  }
+}
+
+//desktop
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+  .banner-content {
+    padding: 20px;
+    .banner-title-main {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+}

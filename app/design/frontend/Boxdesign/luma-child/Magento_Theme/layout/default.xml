@@ -1,19 +1,58 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_width" xsi:type="number">280</argument>
             </arguments>
         </referenceBlock>
+
+        <referenceContainer name="header-wrapper">
+            <container name="header.right" htmlTag="div" htmlClass="header-right">
+                <block class="Magento\Cms\Block\Block" name="header-static-info">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">header-static-info</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceContainer name="catalog.topnav">
+            <block class="Magento\Cms\Block\Block" name="top-menu-contact-link">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">top-menu-contact-link</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="footer-container">
+            <container name="footer.content" htmlTag="div" htmlClass="footer-content">
+                <container name="custom.footer.container" htmlTag="div" htmlClass="container">
+                    <block class="Magento\Cms\Block\Block" name="footer.content.block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">footer-content</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+
+        <move element="minicart" destination="header.right" after="-" />
+
         <!-- Remove compare -->
-        <referenceBlock name="catalog.compare.link" remove="true" />
+        <referenceBlock name="catalog.compare.link" remove="true"/>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
         <referenceBlock name="catalogsearch.product.addto.compare" remove="true"/>
         <referenceBlock name="category.product.addto.compare" remove="true"/>
-        <referenceBlock name="crosssell.product.addto.compare" remove="true" />
-        <referenceBlock name="related.product.addto.compare" remove="true" />
-        <referenceBlock name="upsell.product.addto.compare" remove="true" />
-        <referenceBlock name="view.addto.compare" remove="true" />
+        <referenceBlock name="crosssell.product.addto.compare" remove="true"/>
+        <referenceBlock name="related.product.addto.compare" remove="true"/>
+        <referenceBlock name="upsell.product.addto.compare" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="top.search" remove="true"/>
+
     </body>
 </page>
 
