@@ -6,7 +6,7 @@
  * See COPYING.txt for license details.
  */
 
-use Magento\Framework\App\Bootstrap;
+//use Magento\Framework\App\Bootstrap;
 
 try {
     require __DIR__ . '/../app/bootstrap.php';
@@ -23,7 +23,24 @@ HTML;
     exit(1);
 }
 
-$bootstrap = Bootstrap::create(BP, $_SERVER);
+$params = $_SERVER;
+//$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+switch ($_SERVER['HTTP_HOST']) 
+{
+    case 'dev-m2.boxdesign.com.au':
+    case 'boxdesign.com.au':
+    case 'www.boxdesign.com.au':
+	$params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = 'au';
+        $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = 'store'; 
+        break; 
+    default: 
+        $params = $_SERVER;
+        break; 
+}
+
+//$bootstrap = Bootstrap::create(BP, $_SERVER);
+$bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $params);
 /** @var \Magento\Framework\App\Http $app */
 $app = $bootstrap->createApplication(\Magento\Framework\App\Http::class);
 $bootstrap->run($app);
