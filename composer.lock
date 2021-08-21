@@ -73,15 +73,15 @@
         },
         {
             "name": "amasty/module-hide-price",
-            "version": "1.5.20",
+            "version": "1.5.21",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.amasty.com/community/packages/module-hide-price-1.5.20.zip"
+                "url": "https://composer.amasty.com/community/packages/module-hide-price-1.5.21.zip"
             },
             "require": {
-                "amasty/base": ">=1.12.8",
+                "amasty/base": ">=1.12.11",
                 "laminas/laminas-dom": "*",
-                "php": "^7.1.0"
+                "php": "^7.3.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -21174,6 +21174,7 @@
                 }
             ],
             "description": "Guzzle6 transport for Vault PHP client",
+            "abandoned": true,
             "time": "2019-03-10T06:17:37+00:00"
         },
         {
