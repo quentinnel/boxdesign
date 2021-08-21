@@ -151,20 +151,20 @@ define([
                 '                <div class="widget-timeline-entry ' + config.hoverEffect + '"\n' +
                 '                     style="cursor: pointer; background-image: url(\' ' + imageUrl + ' \');">\n' +
                 '                    <div class="widget-text-container">\n' +
-                '                        <div class="widget-service-icon"><i class="fa fa-heart love-icon" style="color: ' + color + '"></i>\n' +
-                '                        </div>\n' +
+                '                        <!--<div class="widget-service-icon"><i class="fa fa-heart love-icon" style="color: ' + color + '"></i>\n' +
+                '                        </div>-->\n' +
                 '                        <div class="widget-timeline-text">\n' +
-                '                           <div class="widget-entry-title"><span class="love-number">' + imageLove + '</span> ' + word + '</div>\n' +
+                '                           <!--<div class="widget-entry-title"><span class="love-number">' + imageLove + '</span> ' + word + '</div>-->\n' +
                 '                        </div>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
                 '            </div>\n' +
                 '                    <div class="widget-text-container">\n' +
-                '                        <div class="widget-service-icon"><i class="fa fa-heart love-icon-res" style="color: ' + 'red' + '"></i>\n' +
-                '                        </div>\n' +
+                '                        <!--<div class="widget-service-icon"><i class="fa fa-heart love-icon-res" style="color: ' + 'red' + '"></i>\n' +
+                '                        </div>-->\n' +
                 '                        <div class="widget-timeline-text">\n' +
                 '                           <div class="card-footer">' +
-                '                               <div class="widget-entry-title"><span class="love-number">' + imageLove + '</span> ' + word + '</div>\n' +
+                '                               <!--<div class="widget-entry-title"><span class="love-number">' + imageLove + '</span> ' + word + '</div>-->\n' +
                 '                           </div>'+
                 '                        </div>\n' +
                 '                        <div class="viewproduct-btn">\n' +
