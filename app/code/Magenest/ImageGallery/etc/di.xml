@@ -38,7 +38,7 @@
         </arguments>
     </type>
 
-    <type name="Magento\Theme\Block\Html\Topmenu">
+    <!--<type name="Magento\Theme\Block\Html\Topmenu">
         <plugin name="topmenu.imagegallery" type="Magenest\ImageGallery\Plugin\Topmenu" sortOrder="1" disabled="false"/>
-    </type>
+    </type>-->
 </config>
