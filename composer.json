@@ -17,6 +17,7 @@
         "magento/data-migration-tool": "2.4.2",
         "magento/product-community-edition": "2.4.2",
         "mirasvit/module-seo": "*",
+        "mirasvit/module-shipping-rule": "*",
         "treestone/postmigration": "^0.0.6",
         "webshopapps/module-matrixrate": "^20.2"
     },
@@ -73,6 +74,10 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "repositories": {
+        "mirasvit-shr2": {
+            "type": "composer",
+            "url": "https://54537:5SJWAED38Y@packages.mirasvit.com/54537:5SJWAED38Y/"
+        },
         "mirasvit-seo2": {
             "type": "composer",
             "url": "https://54426:X3QI5J9Y4H@packages.mirasvit.com/54426:X3QI5J9Y4H/"
