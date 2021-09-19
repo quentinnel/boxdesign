@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f4ad031823a87f48bae4ea27ff6e2cc",
+    "content-hash": "d58a535a7d2c816c27e0e6aa95f4930c",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -384,16 +384,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.193.4",
+            "version": "3.194.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "758c2225c484088b2118c4e3ff5b37ccfea3948f"
+                "reference": "3b4787381bd747753059a223b801ea5eb7d11780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/758c2225c484088b2118c4e3ff5b37ccfea3948f",
-                "reference": "758c2225c484088b2118c4e3ff5b37ccfea3948f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3b4787381bd747753059a223b801ea5eb7d11780",
+                "reference": "3b4787381bd747753059a223b801ea5eb7d11780",
                 "shasum": ""
             },
             "require": {
@@ -469,9 +469,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.193.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.194.0"
             },
-            "time": "2021-09-14T18:19:00+00:00"
+            "time": "2021-09-16T18:16:59+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2746,37 +2746,35 @@
         },
         {
             "name": "laminas/laminas-db",
-            "version": "2.12.0",
+            "version": "2.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-db.git",
-                "reference": "80cbba4e749f9eb7d8036172acb9ad41e8b6923f"
+                "reference": "7710d3cf2ba8d1b325cc6408e17c8e500c1d131a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-db/zipball/80cbba4e749f9eb7d8036172acb9ad41e8b6923f",
-                "reference": "80cbba4e749f9eb7d8036172acb9ad41e8b6923f",
+                "url": "https://api.github.com/repos/laminas/laminas-db/zipball/7710d3cf2ba8d1b325cc6408e17c8e500c1d131a",
+                "reference": "7710d3cf2ba8d1b325cc6408e17c8e500c1d131a",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-stdlib": "^3.3",
-                "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.3 || ~8.0.0"
+                "laminas/laminas-stdlib": "^3.6",
+                "php": "^7.3 || ~8.0.0 || ~8.1.0"
             },
-            "replace": {
-                "zendframework/zend-db": "^2.11.0"
+            "conflict": {
+                "zendframework/zend-db": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "laminas/laminas-eventmanager": "^3.3",
-                "laminas/laminas-hydrator": "^3.2 || ^4.0",
-                "laminas/laminas-servicemanager": "^3.3",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.3"
+                "laminas/laminas-coding-standard": "~2.2.1",
+                "laminas/laminas-eventmanager": "^3.4",
+                "laminas/laminas-hydrator": "^3.2 || ^4.3",
+                "laminas/laminas-servicemanager": "^3.7",
+                "phpunit/phpunit": "^9.5.5"
             },
             "suggest": {
                 "laminas/laminas-eventmanager": "Laminas\\EventManager component",
-                "laminas/laminas-hydrator": "(^3.2 || ^4.0) Laminas\\Hydrator component for using HydratingResultSets",
+                "laminas/laminas-hydrator": "(^3.2 || ^4.3) Laminas\\Hydrator component for using HydratingResultSets",
                 "laminas/laminas-servicemanager": "Laminas\\ServiceManager component"
             },
             "type": "library",
@@ -2815,7 +2813,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-02-22T22:27:56+00:00"
+            "time": "2021-09-16T20:21:59+00:00"
         },
         {
             "name": "laminas/laminas-dependency-plugin",
@@ -17231,7 +17229,7 @@
             "version": "1.2.125",
             "dist": {
                 "type": "tar",
-                "url": "https://packages.mirasvit.com/54426:X3QI5J9Y4H/downloads/mirasvit-module-core-1.2.125-40b181.tar",
+                "url": "https://packages.mirasvit.com/54537:5SJWAED38Y/downloads/mirasvit-module-core-1.2.125-40b181.tar",
                 "reference": "2dedb2354df345b2e1a57b44e964ecda5bdd1041"
             },
             "require": {
@@ -17317,11 +17315,11 @@
         },
         {
             "name": "mirasvit/module-seo",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "dist": {
                 "type": "tar",
-                "url": "https://packages.mirasvit.com/54426:X3QI5J9Y4H/downloads/mirasvit-module-seo-2.2.4-9b3012.tar",
-                "reference": "16f3746baae929b3296e50a9848d90ff953f684a"
+                "url": "https://packages.mirasvit.com/54426:X3QI5J9Y4H/downloads/mirasvit-module-seo-2.2.5-d78e6a.tar",
+                "reference": "cc58aac0b488c5eb74b183e78e74686b42862126"
             },
             "require": {
                 "magento/framework": "102.0.*|103.0.*",
@@ -17353,7 +17351,7 @@
                 "proprietary"
             ],
             "description": "Advanced Seo Suite",
-            "time": "2021-09-13T07:21:31+00:00"
+            "time": "2021-09-16T08:07:57+00:00"
         },
         {
             "name": "mirasvit/module-seo-filter",
@@ -21166,17 +21164,17 @@
             "time": "2020-07-02T05:49:25+00:00"
         },
         {
-            "name": "webshopapps/module-matrixrate",
-            "version": "20.2.0",
+            "name": "webshopapps/module-productrate",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webshopapps/module-matrixrate.git",
-                "reference": "73e38fe9eef523f72eaedaee2c5718daa70577af"
+                "url": "https://github.com/webshopapps/module-productrate.git",
+                "reference": "0a529adb6c507c8b18e2783d0a596911c3fcc4f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webshopapps/module-matrixrate/zipball/73e38fe9eef523f72eaedaee2c5718daa70577af",
-                "reference": "73e38fe9eef523f72eaedaee2c5718daa70577af",
+                "url": "https://api.github.com/repos/webshopapps/module-productrate/zipball/0a529adb6c507c8b18e2783d0a596911c3fcc4f4",
+                "reference": "0a529adb6c507c8b18e2783d0a596911c3fcc4f4",
                 "shasum": ""
             },
             "type": "magento2-module",
@@ -21185,7 +21183,7 @@
                     "src/registration.php"
                 ],
                 "psr-4": {
-                    "WebShopApps\\MatrixRate\\": "src/"
+                    "WebShopApps\\ProductRate\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -21203,13 +21201,13 @@
                     "name": "Karen Baker"
                 }
             ],
-            "description": "Magento Shipping Multiple Table Rates - MatrixRate",
+            "description": "Magento Shipping Rates - ProductRate",
             "support": {
                 "documentation": "http://docs.shipperhq.com",
-                "issues": "https://github.com/webshopapps/module-matrixrate/issues",
-                "source": "https://github.com/webshopapps/module-matrixrate/tree/20.2.0"
+                "issues": "https://github.com/webshopapps/module-productrate/issues",
+                "source": "https://github.com/webshopapps/module-productrate/tree/master"
             },
-            "time": "2021-02-08T15:49:22+00:00"
+            "time": "2018-11-13T16:41:33+00:00"
         },
         {
             "name": "wikimedia/less.php",
@@ -25894,7 +25892,6 @@
                     "type": "github"
                 }
             ],
-            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {

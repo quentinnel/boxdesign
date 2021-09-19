@@ -19,7 +19,7 @@
         "mirasvit/module-seo": "*",
         "mirasvit/module-shipping-rule": "*",
         "treestone/postmigration": "^0.0.6",
-        "webshopapps/module-matrixrate": "^20.2"
+        "webshopapps/module-productrate": "^1.1"
     },
     "autoload": {
         "exclude-from-classmap": [
