@@ -1,0 +1,32 @@
+
+<fieldset class="fieldset" style="padding: 5px 0 5px;">
+    <div class="field required">
+        <script type="text/x-magento-init">
+            {
+                "*": {
+                    "Magento_Ui/js/core/app": {
+                        "components": {
+                            "multiSelectCardNetworkComp": {
+                                "component": "Windcave_Payments/js/form/element/ui-select",
+                                "template" : "Windcave_Payments/ui-select",
+                                "disableLabel": true,
+                                "filterOptions": false,
+                                "closeBtn": false,
+                                "chipsEnabled": true,
+                                "levelsVisibility": "1",
+                                "multiple": true,
+                                "showCheckbox": true,
+                                "multiselectFocus": true,
+                                "options": <?php echo $block->getNetworkOptions() ?>,
+                                "NamePrefix": "<?php echo $block->getName() ?>",
+                                "value": <?php echo $block->getSelectedNetworkOptions() ?>
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+        <div data-bind="scope: 'multiSelectCardNetworkComp'">
+            <!-- ko template: getTemplate() --><!-- /ko -->
+        </div>
+</fieldset>

@@ -1,0 +1,62 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<windcave_pxfusion>
+				<model>Windcave\Payments\Model\PxFusion\Payment</model>
+				<active>1</active>
+				<title>Credit Card</title>
+                <placeOrderButtonTitle>Place Order</placeOrderButtonTitle>
+				<allowspecific>0</allowspecific>
+                <requireCvcForRebilling>0</requireCvcForRebilling>
+				<sort_order>10</sort_order>
+                <redirectonerror>cart</redirectonerror>
+			</windcave_pxfusion>
+			<windcave_pxfusion_admin>
+				<model>Windcave\Payments\Model\PxFusion\AdminPayment</model>
+				<active>1</active>
+				<title>Credit Card</title>
+                <placeOrderButtonTitle>Place Order</placeOrderButtonTitle>
+				<allowspecific>0</allowspecific>
+                <requireCvcForRebilling>0</requireCvcForRebilling>
+				<sort_order>10</sort_order>
+                <redirectonerror>cart</redirectonerror>
+			</windcave_pxfusion_admin>
+			<windcave_pxpay2>
+				<model>Windcave\Payments\Model\Payment</model>
+				<active>1</active>
+				<title>Windcave</title>
+                <placeOrderButtonTitle>Place Order</placeOrderButtonTitle>
+				<allowspecific>0</allowspecific>
+				<sort_order>11</sort_order>
+                <order_status>pending_payment</order_status>
+                <emailCustomer>1</emailCustomer>
+                <redirectonerror>cart</redirectonerror>
+			</windcave_pxpay2>
+			<windcave_pxpay2_iframe>
+				<model>Windcave\Payments\Model\PxPayIFrame\Payment</model>
+				<active>1</active>
+				<title>Windcave</title>
+                <placeOrderButtonTitle>Place Order</placeOrderButtonTitle>
+				<allowspecific>0</allowspecific>
+				<sort_order>11</sort_order>
+                <order_status>pending_payment</order_status>
+                <iframeWidth>400</iframeWidth>
+                <iframeHeight>500</iframeHeight>
+                <emailCustomer>1</emailCustomer>
+                <redirectonerror>cart</redirectonerror>
+			</windcave_pxpay2_iframe>
+			<windcave_applepay>
+				<model>Windcave\Payments\Model\ApplePay\Payment</model>
+				<title>Apple Pay</title>
+				<active>1</active>
+                <placeOrderButtonTitle>Place Order</placeOrderButtonTitle>
+				<allowspecific>0</allowspecific>
+				<supportednetwork1>Visa</supportednetwork1>
+                <requireCvcForRebilling>0</requireCvcForRebilling>
+				<sort_order>12</sort_order>
+                <redirectonerror>cart</redirectonerror>
+			</windcave_applepay>
+		</payment>
+	</default>
+</config>

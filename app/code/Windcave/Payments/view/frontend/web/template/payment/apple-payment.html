@@ -1,0 +1,24 @@
+<div class="payment-method" id="apple-pay-payment-method"
+    data-bind="css: {'_active': isActive()}">
+    <div class="payment-method-title field choice">
+        <div class="actions-toolbar" style="overflow:hidden;">
+            <div class="primary" style="float:left;">
+                <div id="ckoApplePay" lang=en class="apple-pay-button apple-pay-button-text-buy"
+                    data-bind="
+                        click: payWithApplePay,
+                        enable: isActive(),
+                        style: {'-apple-pay-button-style': $t(getButtonColor()), '-apple-pay-button-type':$t(getButtonTitle())}"
+                ></div>
+                <p style="display:none" id="ckoApplePayError">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <div class="payment-method-content">
+        <div class="payment-method-billing-address">
+
+        </div>
+        <div class="checkout-agreements-block">
+        
+        </div>
+    </div>
+</div>

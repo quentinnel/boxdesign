@@ -1,0 +1,13 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Checkout\Model\CompositeConfigProvider">
+		<arguments>
+			<argument name="configProviders" xsi:type="array">
+				<item name="windcave_pxfusion_config_provider" xsi:type="object">Windcave\Payments\Model\PxFusion\ConfigProvider</item>
+				<item name="windcave_pxpay2_config_provider" xsi:type="object">Windcave\Payments\Model\PxPay2ConfigProvider</item>
+                <item name="windcave_pxpay2_iframe_config_provider" xsi:type="object">Windcave\Payments\Model\PxPayIFrame\ConfigProvider</item>
+				<item name="windcave_applepay_config_provider" xsi:type="object">Windcave\Payments\Model\ApplePay\ConfigProvider</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

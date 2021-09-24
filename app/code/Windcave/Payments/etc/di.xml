@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Windcave\Payments\Logger\DpsLogger">
+		<arguments>
+			<argument name="name" xsi:type="string">Windcave</argument>
+			<argument name="handlers" xsi:type="array">
+				<item name="system" xsi:type="object">Windcave\Payments\Logger\Handler\All</item>
+			</argument>
+		</arguments>
+	</type>
+
+    <preference for="Windcave\Payments\Api\PxFusionManagementInterface" type="Windcave\Payments\Model\Api\PxFusionManagement" />
+    <preference for="Windcave\Payments\Api\GuestPxFusionManagementInterface" type="Windcave\Payments\Model\Api\GuestPxFusionManagement" />
+    
+    <preference for="Windcave\Payments\Api\PxPayManagementInterface" type="Windcave\Payments\Model\Api\PxPayManagement" />
+    <preference for="Windcave\Payments\Api\GuestPxPayManagementInterface" type="Windcave\Payments\Model\Api\GuestPxPayManagement" />
+
+    <preference for="Windcave\Payments\Api\PxPayIFrameManagementInterface" type="Windcave\Payments\Model\Api\PxPayIFrameManagement" />
+    <preference for="Windcave\Payments\Api\GuestPxPayIFrameManagementInterface" type="Windcave\Payments\Model\Api\GuestPxPayIFrameManagement" />
+
+	<preference for="Windcave\Payments\Api\ApplePayManagementInterface" type="Windcave\Payments\Model\Api\ApplePayManagement" />
+    <preference for="Windcave\Payments\Api\GuestApplePayManagementInterface" type="Windcave\Payments\Model\Api\GuestApplePayManagement" />
+
+	<preference for="Magento\Sales\Model\Order\Pdf\Invoice" type="Windcave\Payments\Model\Rewrite\Order\Pdf\Invoice"/>
+
+</config>

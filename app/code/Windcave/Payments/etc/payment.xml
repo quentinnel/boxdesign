@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../../Magento/Payment/etc/payment.xsd">
+	<methods>
+		<method name="windcave_pxpay2">
+			<allow_multiple_address>1</allow_multiple_address>
+		</method>
+		<method name="windcave_pxfusion">
+			<allow_multiple_address>1</allow_multiple_address>
+		</method>
+		<method name="windcave_pxpay2_iframe">
+			<allow_multiple_address>0</allow_multiple_address>
+		</method>
+		<method name="windcave_applepay">
+			<allow_multiple_address>0</allow_multiple_address>
+		</method>
+	</methods>
+</payment>

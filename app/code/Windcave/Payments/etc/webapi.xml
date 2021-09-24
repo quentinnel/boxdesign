@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <!-- Managing Guest Cart Payment -->
+    <route url="/V1/guest-carts/:cartId/pxfusion/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\GuestPxFusionManagementInterface" method="set"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/pxfusion/get-fusion-session" method="GET">
+        <service class="Windcave\Payments\Api\GuestPxFusionManagementInterface" method="getFusionSession"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    
+    
+    <route url="/V1/guest-carts/:cartId/pxpay2/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\GuestPxPayManagementInterface" method="set"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/pxpay2/redirect-to-pxpay2" method="GET">
+        <service class="Windcave\Payments\Api\GuestPxPayManagementInterface" method="getRedirectLink"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/:cartId/pxpay2iframe/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\GuestPxPayIFrameManagementInterface" method="set"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/pxpay2iframe/redirect-to-pxpay2" method="GET">
+        <service class="Windcave\Payments\Api\GuestPxPayIFrameManagementInterface" method="getRedirectLink"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/applepay/perform-validation" method="POST">
+        <service class="Windcave\Payments\Api\GuestApplePayManagementInterface" method="performValidation"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/guest-carts/applepay/perform-payment" method="POST">
+        <service class="Windcave\Payments\Api\GuestApplePayManagementInterface" method="performPayment"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <!-- Managing my Cart Payment -->
+    <route url="/V1/carts/mine/pxfusion/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\PxFusionManagementInterface" method="set"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+        <data>
+            <parameter name="cartId" force="true">%cart_id%</parameter>
+        </data>
+    </route>
+
+    <route url="/V1/carts/mine/pxfusion/get-fusion-session" method="GET">
+        <service class="Windcave\Payments\Api\PxFusionManagementInterface" method="getFusionSession"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+
+    <route url="/V1/carts/mine/pxpay2/redirect-to-pxpay2" method="GET">
+        <service class="Windcave\Payments\Api\PxPayManagementInterface" method="getRedirectLink"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <route url="/V1/carts/mine/pxpay2/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\PxPayManagementInterface" method="set"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+        <data>
+            <parameter name="cartId" force="true">%cart_id%</parameter>
+        </data>
+    </route>
+
+
+    <route url="/V1/carts/mine/pxpay2iframe/redirect-to-pxpay2" method="GET">
+        <service class="Windcave\Payments\Api\PxPayIFrameManagementInterface" method="getRedirectLink"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <route url="/V1/carts/mine/pxpay2iframe/selected-payment-method" method="PUT">
+        <service class="Windcave\Payments\Api\PxPayIFrameManagementInterface" method="set"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+        <data>
+            <parameter name="cartId" force="true">%cart_id%</parameter>
+        </data>
+    </route>
+
+    <route url="/V1/carts/mine/applepay/perform-validation" method="POST">
+        <service class="Windcave\Payments\Api\ApplePayManagementInterface" method="performValidation"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <route url="/V1/carts/mine/applepay/perform-payment" method="POST">
+        <service class="Windcave\Payments\Api\ApplePayManagementInterface" method="performPayment"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+</routes>
