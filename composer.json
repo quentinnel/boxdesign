@@ -16,6 +16,7 @@
         "magento/composer-root-update-plugin": "~1.1",
         "magento/data-migration-tool": "2.4.2",
         "magento/product-community-edition": "2.4.2",
+        "px/pxpay2": "^0.12.6",
         "mirasvit/module-gtm": "*",
         "mirasvit/module-seo": "*",
         "mirasvit/module-shipping-rule": "*",
