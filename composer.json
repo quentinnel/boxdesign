@@ -102,6 +102,15 @@
         }
     },
     "extra": {
-        "magento-force": "override"
+        "magento-force": "override",
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "magento/framework": {
+                "MDVA-43395": "patches/composer/MDVA-43395_EE_2.4.3-p1_COMPOSER_v1/MDVA-43395_magento-framework.patch"
+            },
+            "magento/module-email": {
+                "MDVA-43395": "patches/composer/MDVA-43395_EE_2.4.3-p1_COMPOSER_v1/MDVA-43395_magento-module-email.patch"
+            }
+        }
     }
 }
