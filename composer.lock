@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "928c609ff32e20468aa30d12061671c0",
+    "content-hash": "858a05e88e831a3f481991b5f0a2b94e",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -5565,6 +5565,12 @@
                 "ext-imagick": "Use Image Magick >=3.0.0 as an optional alternative image processing library"
             },
             "type": "magento2-library",
+            "extra": {
+                "patches_applied": {
+                    "MDVA-43395": "patches/composer/MDVA-43395_EE_2.4.3-p1_COMPOSER_v1/MDVA-43395_magento-framework.patch",
+                    "MDVA-43443": "patches/composer/MDVA-43443_EE_2.4.2-p2_COMPOSER_v1/MDVA-43443_EE_2.4.2-p2_magento-framework.patch"
+                }
+            },
             "autoload": {
                 "files": [
                     "registration.php"
@@ -9313,6 +9319,12 @@
                 "magento/module-theme": "101.1.*"
             },
             "type": "magento2-module",
+            "extra": {
+                "patches_applied": {
+                    "MDVA-43395": "patches/composer/MDVA-43395_EE_2.4.3-p1_COMPOSER_v1/MDVA-43395_magento-module-email.patch",
+                    "MDVA-43443": "patches/composer/MDVA-43443_EE_2.4.2-p2_COMPOSER_v1/MDVA-43443_EE_2.4.2-p2_magento-module-email.patch"
+                }
+            },
             "autoload": {
                 "files": [
                     "registration.php"
@@ -21249,12 +21261,12 @@
             "version": "1.1.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/allure-framework/allure-php-commons.git",
+                "url": "https://github.com/allure-framework/allure-php-api.git",
                 "reference": "5ae2deac1c7e1b992cfa572167370de45bdd346d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/allure-framework/allure-php-commons/zipball/5ae2deac1c7e1b992cfa572167370de45bdd346d",
+                "url": "https://api.github.com/repos/allure-framework/allure-php-api/zipball/5ae2deac1c7e1b992cfa572167370de45bdd346d",
                 "reference": "5ae2deac1c7e1b992cfa572167370de45bdd346d",
                 "shasum": ""
             },
@@ -22318,6 +22330,7 @@
                 "keyword",
                 "library"
             ],
+            "abandoned": true,
             "time": "2017-05-02T12:18:12+00:00"
         },
         {
@@ -22394,6 +22407,7 @@
                 "tput",
                 "window"
             ],
+            "abandoned": true,
             "time": "2017-05-02T12:26:19+00:00"
         },
         {
@@ -22450,6 +22464,7 @@
                 "listener",
                 "observer"
             ],
+            "abandoned": true,
             "time": "2017-01-13T15:30:50+00:00"
         },
         {
@@ -22504,6 +22519,7 @@
                 "exception",
                 "library"
             ],
+            "abandoned": true,
             "time": "2017-01-16T07:53:27+00:00"
         },
         {
@@ -22566,6 +22582,7 @@
                 "link",
                 "temporary"
             ],
+            "abandoned": true,
             "time": "2017-07-11T07:42:15+00:00"
         },
         {
@@ -22620,6 +22637,7 @@
                 "iterator",
                 "library"
             ],
+            "abandoned": true,
             "time": "2017-01-10T10:34:47+00:00"
         },
         {
@@ -22680,6 +22698,7 @@
                 "stream",
                 "wrapper"
             ],
+            "abandoned": true,
             "time": "2017-01-14T12:26:10+00:00"
         },
         {
@@ -22744,6 +22763,7 @@
                 "stream",
                 "wrapper"
             ],
+            "abandoned": true,
             "time": "2017-02-21T16:01:06+00:00"
         },
         {
@@ -22804,6 +22824,7 @@
                 "string",
                 "unicode"
             ],
+            "abandoned": true,
             "time": "2017-01-16T07:08:25+00:00"
         },
         {
