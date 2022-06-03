@@ -18,12 +18,17 @@
         </referenceContainer>
 
         <referenceContainer name="catalog.topnav">
-            <block class="Magento\Cms\Block\Block" name="top-menu-contact-link">
+	    <!--<block class="Magento\Cms\Block\Block" name="top-menu-contact-link">
                 <arguments>
                     <argument name="block_id" xsi:type="string">top-menu-contact-link</argument>
                 </arguments>
+	    </block>-->
+            <block class="Magento\Cms\Block\Block" name="top-menu-reviews-link">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">top-menu-reviews-link</argument>
+                </arguments>
             </block>
-        </referenceContainer>
+    </referenceContainer>
 
         <referenceContainer name="footer-container">
             <container name="footer.content" htmlTag="div" htmlClass="footer-content">
