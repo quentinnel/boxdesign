@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71582f24c52a8d713da3c482240f9819",
+    "content-hash": "03901a42291ae1e851ab1314d83f6eb5",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17180,94 +17180,6 @@
                 "framework"
             ],
             "time": "2020-12-02T21:12:59+00:00"
-        },
-        {
-            "name": "mageplaza/module-core",
-            "version": "1.4.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/module-core.git",
-                "reference": "85d1074fdee1259d438618c977ba6e21b76c4f39"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/85d1074fdee1259d438618c977ba6e21b76c4f39",
-                "reference": "85d1074fdee1259d438618c977ba6e21b76c4f39",
-                "shasum": ""
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Mageplaza\\Core\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "support@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Technical Support"
-                }
-            ],
-            "description": "Mageplaza Core for Magento 2",
-            "support": {
-                "issues": "https://github.com/mageplaza/module-core/issues",
-                "source": "https://github.com/mageplaza/module-core/tree/v1.4.12"
-            },
-            "time": "2022-05-30T03:41:05+00:00"
-        },
-        {
-            "name": "mageplaza/module-google-recaptcha",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/magento-2-google-recaptcha.git",
-                "reference": "825a88267d3df7e02caabd9a6c49a8b052738c0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/magento-2-google-recaptcha/zipball/825a88267d3df7e02caabd9a6c49a8b052738c0d",
-                "reference": "825a88267d3df7e02caabd9a6c49a8b052738c0d",
-                "shasum": ""
-            },
-            "require": {
-                "google/recaptcha": "^1.2",
-                "mageplaza/module-core": "^1.4.5"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Mageplaza\\GoogleRecaptcha\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "support@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Technical Support"
-                }
-            ],
-            "description": "Magento 2 Google Recaptcha Extension",
-            "support": {
-                "issues": "https://github.com/mageplaza/magento-2-google-recaptcha/issues",
-                "source": "https://github.com/mageplaza/magento-2-google-recaptcha/tree/v4.0.2"
-            },
-            "time": "2021-08-22T10:04:35+00:00"
         },
         {
             "name": "mirasvit/module-core",
