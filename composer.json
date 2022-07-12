@@ -30,8 +30,8 @@
         "mirasvit/module-seo": "*",
         "mirasvit/module-shipping-rule": "*",
         "sparsh/magento-2-all-product-reviews-extension": "^1.0",
-        "sparsh/magento-2-order-comments-extension": "^1.1",
         "treestone/postmigration": "^0.0.6",
+        "ulmod/ordercomment": "^2.4",
         "webshopapps/module-productrate": "^1.1"
     },
     "autoload": {

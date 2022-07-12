@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d117b05c9b2224fda98e41fad8ad832",
+    "content-hash": "76020fc76d598a19e394d1f3c751ea26",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18714,31 +18714,6 @@
             "description": "Sparsh All Product Reviews Extension for Magento 2"
         },
         {
-            "name": "sparsh/magento-2-order-comments-extension",
-            "version": "1.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/sparsh/magento-2-order-comments-extension/sparsh-magento-2-order-comments-extension-1.1.0.0.zip",
-                "shasum": "ddc1fd756d111c7b51d1118d67b41023cbdeb13f"
-            },
-            "require": {
-                "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Sparsh\\OrderComments\\": ""
-                }
-            },
-            "license": [
-                "OSL-3.0"
-            ],
-            "description": "Sparsh Order Comments Extension for Magento 2"
-        },
-        {
             "name": "spomky-labs/otphp",
             "version": "v10.0.1",
             "source": {
@@ -20801,6 +20776,29 @@
                 "yui"
             ],
             "time": "2018-01-15T15:26:51+00:00"
+        },
+        {
+            "name": "ulmod/ordercomment",
+            "version": "2.4.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/ulmod/ordercomment/ulmod-ordercomment-2.4.2.0.zip",
+                "shasum": "c99f5b18d691d9ce7fead61efbbde78302b6c880"
+            },
+            "require": {
+                "magento/framework": ">100.0",
+                "magento/module-quote": ">100.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Ulmod\\OrderComment\\": ""
+                }
+            },
+            "description": "Order Comment for Magento 2 by Ulmod"
         },
         {
             "name": "vertex/module-address-validation",
