@@ -1,0 +1,24 @@
+<!-- ko if: getDefaultCommentFieldState() == 2 -->
+<div class="payment-option opc-payment-additional comment last">
+    <div class="payment-option-title field choice">
+        <span data-bind="i18n: 'Delivery Instructions / Order Comments'"></span>
+    </div>
+    <div class="payment-option-content">
+        <!-- ko template: 'Ulmod_OrderComment/checkout/order-comment-form' --><!-- /ko -->
+    </div>
+</div>
+<!-- /ko -->
+	
+<!-- ko if: getDefaultCommentFieldState() != 2 -->
+<div class="payment-option _collapsible opc-payment-additional um-ordercomment comment last"
+	 data-bind="mageInit: {'collapsible':{'openedState': '_active', 'active': isDefaultCommentFieldStateExpanded()}}">
+    <div class="payment-option-title field choice" data-role="title">
+        <span class="action action-toggle" role="heading" aria-level="2">
+            <!-- ko i18n: 'Leave A Comment'--><!-- /ko -->
+        </span>
+    </div>
+    <div class="payment-option-content" data-role="content">	
+	 <!-- ko template: 'Ulmod_OrderComment/checkout/order-comment-form' --><!-- /ko -->			
+    </div>	
+</div>
+<!-- /ko -->
